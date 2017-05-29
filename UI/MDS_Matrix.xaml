@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="Cluster_Analisys.MDS_Matrix"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Cluster_Analisys"
+             mc:Ignorable="d" 
+             HorizontalAlignment="Left" VerticalAlignment="Top">
+    <Viewbox>
+        <Grid Width="1856" Height="1020">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="927*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <ScrollViewer x:Name="Matrix2D_Scroll" Margin="0,0,427,259" Width="1427" Height="761">
+                <WrapPanel x:Name="Matrix2D_MatrixPanel" Width="1427" Cursor="Hand" Height="761"/>
+            </ScrollViewer>
+            <WrapPanel x:Name="Matrix_WorkPanel" Margin="1426,0,0,592" Width="428" Height="428" Background="White"/>
+            <DataGrid x:Name="DataGrid_Excel" Margin="-2,745,423,0" IsReadOnly="True"/>
+            <Button x:Name="button_clear" Content="Снять выделение" HorizontalAlignment="Left" Margin="1432,433,0,0" VerticalAlignment="Top" Width="136" Height="33" Click="button_clear_Click"/>
+        </Grid>
+    </Viewbox>
+</UserControl>

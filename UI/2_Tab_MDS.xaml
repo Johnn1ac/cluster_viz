@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="Cluster_Analisys.Tab_MDS"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Cluster_Analisys"
+             mc:Ignorable="d">
+    
+    <Grid Background="#FF423C3C">
+        <TabControl x:Name="tabControl" TabStripPlacement="Left" BorderThickness="3">
+            <TabControl.ContextMenu>
+                <ContextMenu MenuItem.Click ="ContextMenu_Click" >
+                    <MenuItem Header="Удалить" Name="Delete_tab"/>
+                </ContextMenu>
+            </TabControl.ContextMenu>
+        </TabControl>
+    </Grid>
+</UserControl>
